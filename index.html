@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            overflow-x: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .app-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+
+        .app-link {
+            display: block;
+            width: calc(30% - 10px);
+            height: 150px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px 30px;
+            overflow: hidden;
+        }
+
+        .app-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <p>ZIZI</p>
+    <div class="container">
+        <h1>Application Hub de Nexos le BG et Alifarce le BIG BOSS</h1>
+        <p>Choisis une application:</p>
+        <ul class="app-links">
+            <li><a href="application1.html" class="app-link">Application 1</a></li>
+            <li><a href="application2.html" class="app-link">Application 2</a></li>
+            <li><a href="application3.html" class="app-link">Application 3</a></li>
+            <!--Ajoutes d'autres apps stv -->
+        </ul>
+    </div>
 </body>
 </html>
